@@ -1,0 +1,43 @@
+{
+  "name": "niera-mvc",
+  "version": "0.0.1",
+  "description": "This is a mvc framework based on expressjs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "db_init": "node_modules/.bin/sequelize init",
+    "db_migrate": "node_modules/.bin/sequelize db:migrate",
+    "db_migrate_undo": "node_modules/.bin/sequelize db:migrate:undo",
+    "db_model_generate": "node_modules/.bin/sequelize model:generate",
+    "db_create": "node_modules/.bin/sequelize init db:create"
+  },
+  "keywords": [
+    "niera",
+    "restfulapi",
+    "framework",
+    "web",
+    "api",
+    "app",
+    "mvc",
+    "express",
+    "javascript"
+  ],
+  "author": "Nurcahya Ari",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
+    "debug": "~2.6.3",
+    "ejs": "^2.6.1",
+    "express": "~4.15.2",
+    "morgan": "~1.8.1",
+    "mysql": "^2.16.0",
+    "mysql2": "^1.5.3",
+    "pug": "~2.0.0-beta11",
+    "sequelize": "^4.37.7",
+    "sequelize-cli": "^4.1.1",
+    "serve-favicon": "~2.4.2"
+  }
+}
